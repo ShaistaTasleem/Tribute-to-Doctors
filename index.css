@@ -1,0 +1,207 @@
+body {
+    font-family: Helvetica, sans-serif;
+    padding: 1%;
+    font-size: 50;
+    }
+
+    .tribute table {
+      box-sizing: 0;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+    }
+
+    .tribute p {
+      text-decoration-color: black;
+      font-weight: 700;
+      text-align: center;
+      text-shadow: 1px 1px 1px #9f9f9f,
+      2px 2px 1px #8f8f8f;
+      font-size: 2.7rem;
+    }
+           
+/* Styling the area of the slides */
+#slideshow {
+overflow: hidden;
+height: 510px;
+width: 100%;
+margin: 0 auto;
+}
+
+/* Style each of the sides 
+with a fixed width and height */
+.slide {
+float: left;
+height: 510px;
+width: 100vw;
+}
+
+/* Add animation to the slides */
+.slide-wrapper {
+
+/* Calculate the total width on the
+basis of number of slides */
+width: calc(100vw * 4);
+    
+/* Specify the animation with the
+duration and speed */
+animation: slide 10s ease infinite;
+}
+        
+        
+            
+
+
+/* Define the animation 
+for the slideshow */
+@keyframes slide {
+
+/* Calculate the margin-left for 
+each of the slides */
+20% {
+    margin-left: 0px;
+}
+
+40% {
+    margin-left: calc(-100vw * 1);
+}
+
+60% {
+    margin-left: calc(-100vw * 2);
+}
+
+80% {
+    margin-left: calc(-100vw * 3);
+}
+}
+
+.contain ::first-letter{
+margin-left: 15%;
+}
+.contain{
+   
+    border-radius: 12px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    font-size: 25px;
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: center;
+    /* text-align: start; */
+}
+
+
+
+
+.content-table{
+      border-collapse: collapse;
+      margin: 25px 0;
+      font-size: 0.9em;
+      min-width: 400px;
+      border-radius: 5px 5px 0 0;
+      overflow: hidden;
+      box-shadow: 0 0 20px rgba(0,0,0,0.15);
+      
+    }
+ 
+    .content-table th, .content-table td{
+      padding: 12px 15px;
+    }
+    
+    .content-table tbody tr{
+    border-bottom: 1px solid #dddddd;
+    }
+    
+    .content-table tbody tr:nth-of-type(even){
+      background-color: #f3f3f3;
+    }
+    .content-table tbody tr:last-of-type{
+      border-bottom: 2px solid #009879;
+    }
+     .content-table tr.active-row{
+       font-weight: bold;
+       color: #009879;
+     }
+
+.contain2{
+    background-color: whitesmoke;
+    border-radius: 12px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    font-size: 25px;
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: center;
+            
+          }
+
+.btn{
+    background-color: #001a33;
+    width: 150px; 
+    padding: 12px 20px;
+   /* border: 10px;*/
+    border-radius: 8px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 20px;
+  
+}
+
+
+.btn:hover{
+    background-color:rgb(228, 198, 255) ;
+    color: #001a33;
+    transition: .5s;
+    transform: scale(1.1);
+}
+
+
+
+/* h2 css of img */
+
+.img{
+    display: block;
+    width: 500px;
+    height: 350px;
+}
+.home {
+    margin-left: 4%;
+    text-align: left;
+    text-decoration: none;
+    color: #001a33;
+    font-size: 22px;
+    font-weight: 700;
+}
+.home:hover{
+    color: #0064c2;
+}
+.img1 img{
+    margin: 30px 0;
+    max-width: 100%;
+}
+@media(max-width:550px) {
+
+  .contain{
+  margin-left: 8px;
+  margin-right: 8px;
+  text-align:initial;
+  overflow: hidden;
+  width: 99%;
+  }
+  .contain p{
+    width: 98%;
+    font-size: 20px;
+   }
+   .contain p i{
+    font-size: 18px;
+   } 
+            
+   @media(max-width:800px){
+    .table-contain{
+      max-width: 100%;
+      overflow: hidden;
+    }
+    .content-table{
+      /* max-width: 100%; */
+      min-width: none;
+      margin: 0;
+    }
+   }
+  }               
